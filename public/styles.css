@@ -1,4 +1,222 @@
-body {
-background-color: lightgrey;
+/*body{
+padding-top: 50px;
+padding-bottom: 50px;
+
+}*/
+.white {
+color:white;
 
 }
+
+
+body{
+  background-color: rgb(164,181,208);
+}
+
+.col-md-4 {
+border-color: black;
+/*background-color: black;*/
+margin: 0px;
+padding: 20px;
+border-radius: 10px;
+
+}
+
+article {
+background-color: white;
+border-radius: 5px;
+border-color: black;
+border-width: 2px;
+border-style: line;
+padding: 10px;
+
+}
+
+.jumbotron{
+
+  /*background-image: url('/images/3dlogo.png');*/
+  /*background-size: cover;*/
+  /*height: 100%;*/
+  top: 50px;
+  background-color: white;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom:30px;
+
+}
+
+
+
+.mybiglogo {
+  /*position: static;*/
+  top: 50px;
+  height: 100%;
+  width: 100%;
+
+
+
+  text-align: center;
+
+}
+.my-title {
+background-color: white;
+padding-top:15px;
+padding-left: 10%;
+padding-right: 10%;
+padding-bottom: 30px;
+
+font-family: ‘Architects Daughter’, Arial, serif; font-weight: 400;
+
+}
+
+.push-spaces {
+  height: 100px;
+
+}
+
+#mainlogo{
+  color: white;
+  font-size: 14px;
+
+
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
+
+
+
+html, body{height:100%; margin:0;padding:0}
+
+container-fluid{
+  height:100%;
+  display:table;
+  width: 100%;
+  padding: 0;
+}
+
+.row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
+
+
+
+.centering {
+  float:none;
+  margin:0 auto;
+}
+
+.navbar-default {
+  height: 30px;
+  color: black;
+  background-image: url('/images/3dlogo.png');
+}
+
+.navbar-default .navbar-text {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 10px;
+  width: 200px;
+  height: auto;
+}
+.linklist {
+padding:20px;
+
+
+}
+
+.navbar-default .navbar-text .img {
+  
+  width: 100px;
+  height: auto;
+}
+
+#action_btn {
+top: 200px;
+right: 10%;
+
+}
+
+.thelogo{
+width:70px;
+position: absolute;
+top: 2px;
+padding: none;
+margin: none;
+
+}
+.navbar-text.mylogo {
+width: 100px;
+position: fixed;
+margin-top: 0px;
+padding-top: 0px;
+
+}
+
+.btn-primary {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    text-shadow: 2px 2px #ff0000;
+    vertical-align: right;
+  }
+
+  .btn-primary:hover {
+      color: black;
+      background-color: transparent;
+      border-color: white;
+  }
+
+/*  .navbar-collapse {
+      padding-right: 15px;
+      padding-left: 15px;
+      overflow-x: visible;
+      box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1) inset;
+  }*/
+
+  a {
+      color: black;
+      text-decoration: none;
+  }
+  a:hover {
+      color: black;
+      text-decoration: none;
+  }
+
+  .col-md-3 {
+padding-bottom: 20px;
+
+  }
+
+  .navbar-relative {
+ top: 10px;
+ position: relative;
+
+  }
+  .bookmarksedit_text {
+    color: white;
+  }
+
+/*.navbar-toggle {
+height: 30px;
+
+}
+
+.navbar-fixed-top{
+height:30px;
+
+}*/
+
+.navbar-brand {
+  height: 30px;
+  color: white;
+
+}
+.a{
+  color: white;
+}
+
+/*.collapse {
+height: 30px;
+
+}*/

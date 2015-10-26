@@ -1,5 +1,4 @@
-class Genre < DBBase #genre inherits from DBBase
-  # attr_accessor :name
+class Link < DBBase #genre inherits from DBBase
 
   #model the categories table from the database
 
@@ -8,6 +7,6 @@ class Genre < DBBase #genre inherits from DBBase
   #   self.name = params['name']
   # end
 
-  attributes name: :string
+  attributes name: :string, url: :string, description: :string
 
 end

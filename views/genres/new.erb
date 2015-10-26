@@ -1,5 +1,14 @@
+<br>
+<br>
+<br>
+
+
 <form action='/genres' method='post'>
-  <%= erb :'genres/_form' %>
+  
+  <dl>
+    <dt><label for='genre_name'>Name :</label></dt>
+    <dd><input id='genre_name' type='text' name='genre[name]' autofocus value ="<%= @genre.name %>"></dd>
+  </dl>
 
 <!--   <dl>
     <dt><label for='difficulty'>Difficulty :</label></dt>

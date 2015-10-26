@@ -1,40 +1,37 @@
-<br>
-<br>
+<p>This is just some stuff on links</p>
+
+
 <nav class ='navbar navbar-default navbar-relative'>
   <div class='container-fluid'>
-    <button type='button' class='navbar-toggle'
+   <!--  <button type='button' class='navbar-toggle'
     data-toggle='collapse'
     data-target='.navbar-collapse'>
     <span class='sr-only'>Toggle navigation</span>
     <span class='icon-bar'></span>
     <span class='icon-bar'></span>
     <span class='icon-bar'></span>
-  </button>
+  </button> -->
   <div class='navbar-text bookmarksedit_text'> 
   
-<a class = 'white' href='/genres/new'>New Category</a>
+  <a class='white' href='/genres'>Edit / Delete Categories</a>
 
   </div>
   <div class='navbar-collapse collapse'>
     <ul class='nav navbar-nav navbar-right'>
   
     <li><a href='/links'>ALL</a></li>
+    <li><a href='/links/:id'>Ruby fixed</a></li>
       <% @genres.each do |genre| %>
 
       <li>
         <a href="/genres/<%= genre.id %>"><%= genre.name %></a>
-
-            <!-- <form method='post' action="/genres/<%#= genre.id %>/delete">
-            <button>Delete</button>        
-          </form> -->
+       
         </li>
         <% end %>
 
       </ul>
 
 </div>
-
-
 </div>
 </nav>
 
@@ -42,23 +39,47 @@
 
 
 
-<ul>
-  <% @genres.each do |genre| %>
-  <div class ='col-md-2'>
-    <article>
-      <%= genre.name %>
-      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
   
-      <a style="color: black;" href="/genres/<%= genre.id %>/edit">edit</a>
-      <form method='post' action="/genres/<%= genre.id %>/delete">
-      <button>Delete</button>        
-
-      </form>
-
-    </article>
-    </div>
-  <% end %>
-</ul>
 
 
 
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+
+
+
+
+<!-- THESE LINKS NEED MOVED TO THE LINKS PAGE -->
+<!-- <li><a href='/genres'>Genres</a></li>
+<li><a href='/genres/new'>New Genre</a></li>
+<li><a href='/links'>Links</a></li>
+<li><a href='/links/new'>New Link</a></li> -->

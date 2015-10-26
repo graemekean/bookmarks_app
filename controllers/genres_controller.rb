@@ -1,3 +1,5 @@
+
+
 get '/genres' do
   @genres = Genre.all
   erb :'genres/index'
@@ -23,6 +25,7 @@ get '/genres/:id/edit' do
   @genre = Genre.find(params[:id])
 
   erb :'genres/edit'
+
 end
 
 post '/genres/:id' do
@@ -32,3 +35,11 @@ post '/genres/:id' do
 
 end
 
+get '/genres/:id' do
+  @links = Links.all
+  binding.pry
+  @links = @links[:id]
+ 
+  erb :'links/index'
+
+end

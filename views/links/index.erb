@@ -1,0 +1,106 @@
+<p>Some stuff</p>
+
+<nav class ='navbar navbar-default navbar-relative'>
+  <div class='container-fluid'>
+    <button type='button' class='navbar-toggle'
+    data-toggle='collapse'
+    data-target='.navbar-collapse'>
+    <span class='sr-only'>Toggle navigation</span>
+    <span class='icon-bar'></span>
+    <span class='icon-bar'></span>
+    <span class='icon-bar'></span>
+  </button>
+  <div class='navbar-text bookmarksedit_text'> 
+  
+  <a href='/genres'>Edit / Delete Categories</a>
+
+  </div>
+  <div class='navbar-collapse collapse'>
+    <ul class='nav navbar-nav navbar-right'>
+  
+    <li><a href='/links'>ALL</a></li>
+      <% @genres.each do |genre| %>
+
+      <li>
+        <a href="/genres/<%= genre.id %>"><%= genre.name %></a>
+            <!-- <form method='post' action="/genres/<%#= genre.id %>/delete">
+            <button>Delete</button>        
+          </form> -->
+        </li>
+        <% end %>
+
+      </ul>
+
+</div>
+
+
+</div>
+</nav>
+<div class='container'>
+
+  <div class='row'>
+    <% @links.each do |link| %>
+    <div class ='col-md-3'>
+      <article>
+        
+          <%= link.name %>
+          <br>
+          <a href="<%= link.url %>"><%= link.url %></a>  
+          <br>
+          <%= link.description %>
+          <br>
+
+       
+
+          <a href="/links/<%= link.id %>/edit">edit</a><br>
+
+         <!--  <form method='post' action="/links/<%= link.id %>/edit">
+              <button class='btn btn-xs btn-success'>Edit</button>
+          </form> -->
+
+          <form method='post' action="/links/<%= link.id %>/delete">
+            <button class='btn btn-xs btn-danger'>Delete</button>        
+
+          </form>
+        
+      </article>
+      </div> 
+      <% end %>
+      
+
+    
+
+
+  </div>
+</div>
+
+
+
+<!-- <div class ='col-md-12'>
+  <article>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. </p>
+    </article>
+  </div>  --> 
+
+
+  <ul>
+    <% @links.each do |link| %>
+    <li>
+      <%= link.name %>
+      <br>
+      <%= link.url %>
+      <br>
+      <%= link.description %>
+      <br>
+
+      <a href="/links/<%= link.id %>/edit">edit</a><br>
+      <form method='post' action="/links/<%= link.id %>/delete">
+        <button>Delete</button>        
+
+      </form>
+    </li>
+    <% end %>
+  </ul>
